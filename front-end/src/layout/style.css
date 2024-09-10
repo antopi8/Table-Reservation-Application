@@ -1,0 +1,144 @@
+/*Styling for all of reservation website */
+
+.reservations {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Styling for NewReservation */
+.newReservation {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .newReservation label {
+    text-align: left;
+    display: block;
+  }
+  .newReservation h2 {
+    font-size: 20px;
+    color: #f1356d;
+    margin-bottom: 30px;
+  }
+  .newReservation input, .newReservation textarea,  .newReservation select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .newReservation button, .resbutton, .finishbutton, .reserveseat-button {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  /*Styling for NewTable */
+  .newTable {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .newTable label {
+    text-align: left;
+    display: block;
+  }
+
+  .newTable input, .newTable textarea,  .newTable select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    display: block;
+  }
+  .newTable button , .navbuttons{
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    margin: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  /*Styling for Search Page and Table Section */
+  .select-table {
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    padding: 10px 50px;
+    margin: 10px 0;
+  }
+
+  .Finding {
+    background: #f1356d;
+    color: #fff;
+    border: 0;
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin:10px;
+    width: 20%;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  /*Styling for Nav Side Bar */
+  .side-bar {
+    background-color: #881b3c !important;
+    min-width: 200px;
+    max-width: 200px;
+    min-height: 100vh;
+    border-right: solid rgba(0, 0, 0, 0.75) 2px;
+    padding: 0;
+  }
+
+  /*Styling for Responsiveness */
+
+  @media all and (max-width: 1200px) {
+    .side-bar {
+      flex:1;
+      max-width: 500vw;
+      min-height: 1vh;
+      border-right: none;
+      border-bottom: solid rgba(0, 0, 0, 0.75) 2px;
+    }
+    .respond {
+      flex-direction: column;
+    }
+    .respondUL {
+      flex-direction: row !important;
+    }
+    .nav-link {
+      padding: 1vw !important;
+    }
+  }
+  
+  @media all and (max-width: 720px) {
+    .side-bar {
+      font-size: smaller;
+      display: flex;
+      padding-left: 0;
+      list-style-type: none;
+      justify-content: center;
+    }
+    h4 {
+      font-size: 1rem;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
+  
+  @media all and (max-width: 370px) {
+    .side-bar {
+      font-size: 12px;
+    }
+  }
